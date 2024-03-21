@@ -19,6 +19,7 @@ import greyCircle from "../assets/greycircle.jpg";
 import "../styles/createprojectmodal.scss";
 import "../styles/dashboard.scss";
 import CreateProjectSummary from "./CreateProjectSummary";
+import "./styles.css";
 
 const MODAL_STYLES = {
   position: "fixed",
@@ -371,8 +372,8 @@ const CreateProjectModal = ({
   if (!isOpen) return null;
   return ReactDOM.createPortal(
     // #to-do: switch from in-line style to className style
-    <div style={OVERLAY_STYLES} className="">
-      <div style={MODAL_STYLES} className="create-project-modal">
+    <div className="overlay">
+      <div className="modal">
         <div className="btn-container btn-container--right">
           <button className="btn-hide" onClick={onClose} type="button">
             <FontAwesomeIcon icon={faX} className="icon-left" />

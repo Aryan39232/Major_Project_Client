@@ -31,6 +31,7 @@ const OVERLAY_STYLES = {
   bottom: 0,
   backgroundColor: "rgba(0, 0, 0, .7)",
   zIndex: 100,
+  overflowY: "scroll",
 };
 
 const Dashboard = () => {

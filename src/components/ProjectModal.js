@@ -28,10 +28,12 @@ const UPDATEPROJECT_URL = "/api/updateproject";
 const MODAL_STYLES = {
   position: "fixed",
   top: "50%",
-  right: "0%",
-  transform: "translate(0%, -50%)",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   backgroundColor: "#fefcfb",
   zIndex: 1000,
+  // maxHeight: "80%", // Set the maximum height of the modal
+  // overflowY: "auto",
 };
 
 const ProjectModal = ({
@@ -99,7 +101,7 @@ const ProjectModal = ({
     console.log("Action:", action);
 
     // Step 2 - Influencer submits their draft of the project => Step 3
-    if (action === "influencer submit draft") {
+    if (action == "influencer submit draft") {
       try {
         console.log("inside submit draft try block");
         const payload = JSON.stringify({
@@ -274,8 +276,8 @@ const ProjectModal = ({
 
   if (!isOpen) return null;
   return ReactDOM.createPortal(
-    <div style={OVERLAY_STYLES} className="">
-      <div style={MODAL_STYLES} className="project-modal">
+    <div className="overlay">
+      <div className="modal">
         <div className="stack">
           <img src={holidayBackground} alt="" className="stack__under" />
           <button onClick={onClose} className="btn-hide stack__over">
