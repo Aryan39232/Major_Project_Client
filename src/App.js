@@ -11,6 +11,7 @@ import Dashboard from "./components/Dashboard";
 import RequireAuth from "./components/RequireAuth";
 import TestForm from "./components/TestForm";
 import TestLogin from "./components/TestLogin";
+import CreateProjectModal from "components/CreateProjectModal";
 
 const ROLES = {
   Admin: 1000,
@@ -28,6 +29,7 @@ const App = () => {
       <Route path="links" element={<Links />} />
       <Route path="changepassword" element={<ChangePassword />} />
       <Route path="unauthorized" element={<Unauthorized />} />
+      {/* <Route paht="createProject" element={<CreateProjectModal />} /> */}
 
       {/* Private Routes (role based) */}
       <Route
