@@ -59,16 +59,7 @@ const Dashboard = () => {
         <div className="dashboard-container-left" data-testid="left">
           <Link to="/register" className="header-left links__link">
             <div className="logo-container">
-              <img
-                src={colabFolder}
-                alt="logo folder"
-                className="logo-container__logo logo-container__logo--co"
-              />
-              <img
-                src={colabTextTransparent}
-                alt="logo text"
-                className="logo-container__logo logo-container__logo--colab"
-              />
+              <h3>Maj_Pro</h3>              
             </div>
           </Link>
           <nav className="dashboard-links">

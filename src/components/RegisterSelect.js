@@ -5,17 +5,18 @@ import colabFolder from "../assets/CoLab-logo.png";
 const RegisterSelect = ({ handleShowForms }) => {
   return (
     <>
-      <img
+      {/* <img
         src={colabFolder}
         alt="colab folder icon"
         className="colab-folder-logo landing__folder-logo"
-      />
+      /> */}
+      {/* <h3>Maj_Pro</h3> */}
       <h1 className="heading heading--largest">Let's Collaborate!</h1>
       <p className="landing__description">
         Sign up to get access to thousands of social media campaigns with the
         top brands.{" "}
       </p>
-      <p className="landing__description mb-1p5 text--bold">I am a(n):</p>
+      <p className="landing__description mb-1p5 text--bold">I Am ...</p>
       <button
         className="landing__btn"
         onClick={(e) => {

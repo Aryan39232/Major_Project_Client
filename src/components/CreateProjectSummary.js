@@ -245,7 +245,7 @@ const CreateProjectSummary = ({
                     </p>
                     <br />
                     <p>
-                      The creator must upload all content on CoLab by{" "}
+                      The creator must upload all content on Maj_Pro by{" "}
                       {moment(reviewDeadline).format("MMMM Do YYYY, h:mm:ss a")}{" "}
                       for review by the brand. The contract will include up to{" "}
                       {numberOfRevisions} revisions if necessary. All content
