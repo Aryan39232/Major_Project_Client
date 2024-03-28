@@ -134,7 +134,10 @@ const ProjectModalPageOneInProgress = ({
             instagramTask={instagramTask}
           />
         </div>
-        <div className="to-do-right">
+        <div
+          className="to-do-right"
+          style={{ maxHeight: "300px", overflowY: "auto" }}
+        >
           {status !== "brand reviewing" ? (
             <div className="to-do__card">
               <div className="guidelines-card__header">

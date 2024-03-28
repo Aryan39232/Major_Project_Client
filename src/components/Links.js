@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import colab from "../assets/colab-text.png";
+// import colab from "../assets/colab-text.png";
 import useAuth from "../hooks/useAuth";
 import "../styles/links.scss";
 import "../index.scss";
@@ -16,13 +16,14 @@ const Links = () => {
   return (
     <>
       <header className="header">
-        <Link to="/" className="header-left links__link">
-          <img
-            src={colab}
+        {/* <Link to="/" className="header-left links__link"> */}
+        {/* <img
+            // src={colab}
             alt="colab text logo"
             className="header-left colab-text-logo"
-          />
-        </Link>
+          /> */}
+        <h3>Maj_Pro</h3>
+        {/* </Link> */}
         {/* <button
           className="btn-blank"
           onClick={() => {
@@ -47,11 +48,6 @@ const Links = () => {
               />
             </a>
           </div>
-          <img
-            src={appStore}
-            alt="apple app store download"
-            className="header-right__img"
-          />
         </div>
       </header>
 
@@ -78,7 +74,7 @@ const Links = () => {
             </nav>
             <nav className="links-container">
               <Link to="/dashboard">Dashboard</Link>
-              <Link to="/upcoming">Upcoming Collabs</Link>
+              <Link to="/upcoming">Add New Feature In within Time</Link>
             </nav>
           </section>
         </>

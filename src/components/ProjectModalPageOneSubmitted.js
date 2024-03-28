@@ -57,7 +57,10 @@ const ProjectModalPageOneSubmitted = ({
           </div>
         </div>
         <div className="to-do-right">
-          <div className="flex-col flex-col--gap">
+          <div
+            className="flex-col flex-col--gap"
+            style={{ maxHeight: "300px", overflowY: "auto" }}
+          >
             <p className="form__label">Next Steps</p>
             {status === "ready to publish" ? (
               <>
