@@ -6,7 +6,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 const moment = require("moment");
-
+//contact componenet
 const Contract = ({
   instagramTask,
   tiktokTask,
