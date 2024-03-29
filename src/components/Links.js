@@ -23,7 +23,7 @@ const Links = () => {
             alt="colab text logo"
             className="header-left colab-text-logo"
           /> */}
-        <h3>Maj_Pro</h3>
+        <h3>BrandBuddies</h3>
         {/* </Link> */}
         {/* <button
           className="btn-blank"
