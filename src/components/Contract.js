@@ -35,7 +35,7 @@ const Contract = ({
         3. {youtubeTask} on YouTube.
       </p>
       <p className="form__text">
-        The creator must upload all content on Maj_Pro by{" "}
+        The creator must upload all content on BrandBuddies by{" "}
         {moment(reviewDeadline).format("MMMM Do YYYY, h:mm:ss a")} for review by
         the brand ({company}). The contract will include up to{" "}
         {numberOfRevisions} revisions if necessary. All content must be uploaded

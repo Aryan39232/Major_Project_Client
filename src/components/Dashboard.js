@@ -59,7 +59,7 @@ const Dashboard = () => {
         <div className="dashboard-container-left" data-testid="left">
           <Link to="/register" className="header-left links__link">
             <div className="logo-container">
-              <h3>Maj_Pro</h3>              
+              <h3>BrandBuddies</h3>
             </div>
           </Link>
           <nav className="dashboard-links">
