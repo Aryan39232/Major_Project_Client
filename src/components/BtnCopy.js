@@ -18,7 +18,7 @@ const BtnCopy = ({ strArrToCopy, specialChar }) => {
         return strArrWithSpecialChar;
       }
     } else {
-      console.log("its not an array bro");
+      console.log("Its not an array");
       return strArrToCopy;
     }
   };
