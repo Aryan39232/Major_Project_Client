@@ -56,7 +56,7 @@ const UpdateProfile = () => {
   const [uploadAvatarSuccess, setUploadAvatarSuccess] = useState(false);
   // get image data from backend on pageload
 
-  const [errMsg, setErrMsg] = useState("");
+  const [errMsg] = useState("");
 
   // Add social media links and niche to profile
   const updateProfileLinks = async (e) => {
