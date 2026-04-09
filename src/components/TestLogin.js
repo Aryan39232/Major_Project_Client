@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 
 const TestLogin = () => {
-  const [err, setErr] = useState(false);
   const [user, setUser] = useState("");
   const [pwd, setPwd] = useState("");
 
@@ -19,7 +18,6 @@ const TestLogin = () => {
       setUserData(res.data);
       console.log(res);
     } catch (error) {
-      console.log(err);
     }
   };
   return (
@@ -45,7 +43,7 @@ const TestLogin = () => {
         >
           Submit
         </button>
-        <p style={{ visibility: err ? "visible" : "hidden" }}>
+        <p style={"visible"}>
           Something went wrong
         </p>
       </form>

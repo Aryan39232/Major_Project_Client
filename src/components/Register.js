@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "../styles/register.scss";
 import influencerHeadshot from "../assets/register/black-model-afro.png";
 import signUpImg from "../assets/signup.png";
@@ -9,8 +8,7 @@ import RegisterSelect from "./RegisterSelect";
 import Links from "./Links";
 import { Outlet } from "react-router-dom";
 
-const Register = () => {
-  const navigate = useNavigate(); // to use the navigate hook
+const Register = () => {  
 
   // Landing page
   const [showLanding, setShowLanding] = useState(true);

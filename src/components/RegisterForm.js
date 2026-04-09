@@ -28,8 +28,6 @@ const RegisterForm = ({
   const errRef = useRef();
   // state for user input
   const [user, setUser] = useState("");
-  const [validName, setValidName] = useState(false);
-  const [userFocus, setUserFocus] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
 
@@ -50,8 +48,7 @@ const RegisterForm = ({
 
   // Form Pages
   const [showInfluencerPageOne, setShowInfluencerPageOne] = useState(true);
-  const [showBrandPageOne, setShowBrandPageOne] = useState(true);
-  const [showBrandPageTwo, setShowBrandPageTwo] = useState(true);
+
 
   useEffect(() => {
     const result = PWD_REGEX.test(pwd);
@@ -69,7 +66,6 @@ const RegisterForm = ({
   const handleSubmit = async (e) => {
     e.preventDefault();
     setShowInfluencerPageOne(false);
-    setShowBrandPageOne(false);
     console.log("inside handle submit");
 
     // If register button is hacked, validate username/pwd again here and in backend
@@ -211,8 +207,6 @@ const RegisterForm = ({
                         setUser(e.target.value);
                       }}
                       required
-                      onFocus={() => setUserFocus(true)}
-                      onBlur={() => setUserFocus(false)}
                       placeholder="email"
                       className="register-form__input"
                     />
@@ -393,8 +387,6 @@ const RegisterForm = ({
                         setUser(e.target.value);
                       }}
                       required
-                      onFocus={() => setUserFocus(true)}
-                      onBlur={() => setUserFocus(false)}
                       placeholder="email"
                       className="register-form__input"
                     />
