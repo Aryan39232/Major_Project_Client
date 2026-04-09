@@ -1,24 +1,56 @@
-$primary-color: #cec362;
-$secondary-color: #183683;
+// Primary Colors - Professional Deep Blue Theme
+$primary-color: #3b82f6;
+$primary-dark: #1e3a8a;
+$primary-light: #60a5fa;
+$primary-lighter: #93c5fd;
+$primary-lightest: #dbeafe;
 
-$warning-color: #feb624;
-$success-color: #3c645b;
+$secondary-color: #1e3a8a;
 
-$background-dark-color: #272727;
-$background-light-color: #fcfcfc;
+// Accent Colors - Coral/Rose for CTAs
+$accent-color: #fb7185;
+$accent-dark: #f43f5e;
+$accent-light: #fda4af;
 
-$background-light-grey: #f5f5f5;
+// Semantic Colors
+$success-color: #10b981;
+$success-light: #d1fae5;
+$warning-color: #f59e0b;
+$warning-light: #fef3c7;
+$error-color: #ef4444;
+$error-light: #fee2e2;
+$info-color: #3b82f6;
+$info-light: #dbeafe;
 
-$transparent-dark-color: rgba(0, 0, 0, 0.7);
-$header-light-color: #fffefe;
-$text-dark-color: #1f1f1f;
-$text-light-color: #f5f5f5;
-$text-grey: #7c7c7c;
-$text-dark-grey: #696969;
-$background-dark-grey: #dedede;
-$background-accessibility-grey: #efefef;
-$error-color: #ee4242;
+// Neutral Colors
+$white: #ffffff;
+$gray-50: #f8fafc;
+$gray-100: #f1f5f9;
+$gray-200: #e2e8f0;
+$gray-300: #cbd5e1;
+$gray-400: #94a3b8;
+$gray-500: #64748b;
+$gray-600: #475569;
+$gray-700: #334155;
+$gray-800: #1e293b;
+$gray-900: #0f172a;
 
-$form-border-color: #d6d6d6;
-$btn-grey-color: #939393;
-$btn-light-text-color: #f5f5f5;
+// Background Colors
+$background-dark-color: $gray-900;
+$background-light-color: $white;
+$background-light-grey: $gray-50;
+$background-dark-grey: $gray-200;
+$background-accessibility-grey: $gray-100;
+
+// Text Colors
+$text-dark-color: $gray-900;
+$text-light-color: $white;
+$text-grey: $gray-500;
+$text-dark-grey: $gray-600;
+$header-light-color: $white;
+
+// Utility Colors
+$transparent-dark-color: rgba(15, 23, 42, 0.7);
+$form-border-color: $gray-300;
+$btn-grey-color: $gray-500;
+$btn-light-text-color: $white;

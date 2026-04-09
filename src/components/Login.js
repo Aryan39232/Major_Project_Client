@@ -42,7 +42,7 @@ const Login = () => {
     try {
       const payload = JSON.stringify({ user: "adidas", pwd: "Password1!" });
       const response = await axios.post(
-        "http://localhost:5000/user/login",
+        "http://localhost:3500/user/login",
         payload,
         {
           headers: {
