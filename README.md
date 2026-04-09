@@ -228,7 +228,7 @@ Ensure you have the following installed:
    npm run dev
    ```
 
-   Server starts at `https://major-project-server-0e5k.onrender.com`
+   Server starts at `https://major-project-server-qg4z.onrender.com`
 
    **Terminal 2 - Frontend Application**
 
@@ -254,7 +254,7 @@ Ensure you have the following installed:
 
 | Variable                      | Description            | Example                                          |
 | ----------------------------- | ---------------------- | ------------------------------------------------ |
-| `REACT_APP_API_URL`           | Backend API endpoint   | `https://major-project-server-0e5k.onrender.com` |
+| `REACT_APP_API_URL`           | Backend API endpoint   | `https://major-project-server-qg4z.onrender.com` |
 | `REACT_APP_STRIPE_PUBLIC_KEY` | Stripe publishable key | `pk_test_...`                                    |
 
 #### Backend (.env)
