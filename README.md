@@ -219,46 +219,7 @@ Ensure you have the following installed:
    npm install
    ```
 
-4. **Configure Environment Variables**
-
-   **Client (.env)**
-
-   ```bash
-   cd Major_Project_Client_Enhanced
-   cp .env.example .env
-   ```
-
-   Edit `.env`:
-
-   ```env
-   REACT_APP_API_URL=http://localhost:3500
-   REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_publishable_key
-   ```
-
-   **Server (.env)**
-
-   ```bash
-   cd Major_Project_Server_Enhanced
-   cp .env.example .env
-   ```
-
-   Edit `.env`:
-
-   ```env
-   PORT=3500
-   NODE_ENV=development
-   DATABASE_URI=mongodb://localhost:27017/brandbuddies
-   ACCESS_TOKEN_SECRET=your_access_secret_here
-   REFRESH_TOKEN_SECRET=your_refresh_secret_here
-   AWS_ACCESS_KEY_ID=your_aws_access_key
-   AWS_SECRET_ACCESS_KEY=your_aws_secret_key
-   AWS_REGION=us-east-1
-   AWS_BUCKET_NAME=your-bucket-name
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   CLIENT_URL=http://localhost:3000
-   ```
-
-5. **Start Development Servers**
+4. **Start Development Servers**
 
    **Terminal 1 - Backend Server**
 
@@ -278,7 +239,7 @@ Ensure you have the following installed:
 
    App opens at `http://localhost:3000`
 
-6. **Access the Application**
+5. **Access the Application**
    - Open browser to `http://localhost:3000`
    - Register as an Influencer or Brand
    - Start exploring!
