@@ -17,6 +17,8 @@ import "../styles/dashboard.scss";
 import colabFolder from "../assets/CoLab-logo.png";
 import colabTextTransparent from "../assets/colab-text-transparent.png";
 import useFetchUserAndProjects from "../hooks/useFetchUserAndProjects";
+import useLogout from "hooks/useLogout";
+
 
 const BUTTON_WRAPPER_STYLES = {
   position: "relative",
@@ -37,7 +39,8 @@ const OVERLAY_STYLES = {
 const Dashboard = () => {
   const { user, currentProjects } = useFetchUserAndProjects();
   const { auth } = useAuth(AuthContext);
-  const navigate = useNavigate(); // to use the navigate hook
+  const navigate = useNavigate();
+  const logout = useLogout();
 
   // Open Modals
   const [showModal, setShowModal] = useState(false);
@@ -53,6 +56,14 @@ const Dashboard = () => {
     setProjectModal(project);
     setShowModal(true);
   };
+
+  // ADD THIS LOGOUT HANDLER
+  const handleLogout = () => {
+    if (window.confirm("Are you sure you want to logout?")) {
+      logout();
+    }
+  };
+
   return (
     <>
       <section className="dashboard">
@@ -132,12 +143,17 @@ const Dashboard = () => {
 
               <div className="dashboard-header-right">
                 <FontAwesomeIcon icon={faBell} className="icon-medium" />
-                <Link to="/login" className="link link--dark">
+                {/* CHANGED THIS: Replace Link with button for logout */}
+                <button 
+                  onClick={handleLogout} 
+                  className="link link--dark btn-logout-icon"
+                  title="Logout"
+                >
                   <FontAwesomeIcon
                     icon={faArrowRightFromBracket}
                     className="icon-medium"
                   />
-                </Link>
+                </button>
                 {user.avatar ? (
                   <Link
                     to="/updateprofile"
